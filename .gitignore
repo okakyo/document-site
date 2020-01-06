@@ -1,0 +1,5 @@
+.vscode
+.idle
+node_modules/**/*
+.env
+db.sqlite3
