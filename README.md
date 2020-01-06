@@ -9,8 +9,13 @@
 - Requests
 
 ## ディレクトリ説明:
-- projects:
+- api:
     - projects:
+        - Django についてを管理するためのフォルダ
     - works:
-    - 
+        - 記事を表示するかどうかを管理するためのフォルダ
+    - static:
+        - CSS,JS を管理するフォルダ
+    - template:
+        - HTML ファイルをまとめておくためのフォルダ
 
