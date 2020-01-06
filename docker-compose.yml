@@ -4,6 +4,10 @@ services:
     restart: always
     build:  "./api"
     container_name: "django-api"
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes: 
       - ./api:/api
     ports: 
