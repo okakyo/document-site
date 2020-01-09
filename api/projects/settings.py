@@ -24,9 +24,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'h8u!vj2a6am48b)j*9u5aa#heb*w^$1j_tc-ul3w0)c7x75mz#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+DEBUG = False #Trueから変更
+
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #追加
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
