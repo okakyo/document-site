@@ -1,5 +1,3 @@
 build:
   docker:
     web: Dockerfile
-run:
-  web: gunicorn young-forest-43805.wsgi --log-file -
