@@ -14,4 +14,4 @@ COPY ./api /api
 WORKDIR /api
 
 
-CMD ["sh","-c","gunicorn --bind localhost:8000 projects.wsgi"]
+CMD ["sh","-c","gunicorn --bind 0.0.0.0:8000 projects.wsgi"]
