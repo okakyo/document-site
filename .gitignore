@@ -1,5 +1,5 @@
 .vscode
-.idle
+.idea
 node_modules/**/*
 docker/**/*
 .env
