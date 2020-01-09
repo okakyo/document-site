@@ -27,7 +27,7 @@ SECRET_KEY = 'h8u!vj2a6am48b)j*9u5aa#heb*w^$1j_tc-ul3w0)c7x75mz#'
 
 DEBUG = False #Trueから変更
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #追加
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com'] #追加
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
