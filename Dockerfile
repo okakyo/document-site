@@ -5,10 +5,10 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV DEBUG 0
 
-COPY ./api/requirement.txt requirement.txt
+COPY api/requirements.txt requirement.txt
 
 RUN  apk add gcc mariadb-dev python3-dev build-base libffi-dev g++ libc-dev linux-headers &&\
-pip install  -r requirement.txt 
+pip install  -r requirements.txt
 
 COPY ./api /api
 WORKDIR /api
