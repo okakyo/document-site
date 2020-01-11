@@ -14,4 +14,4 @@ COPY ./api /api
 WORKDIR /api
 
 
-CMD gunicorn --bind 0.0.0.0:$PORT projects.wsgi
+CMD gunicorn  projects.wsgi
