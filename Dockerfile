@@ -15,3 +15,5 @@ WORKDIR /api
 
 RUN python manage.py migrate
 
+CMD ["sh","-c","gunicorn  --bind 0.0.0.0:$PORT projects.wsgi:application"]
+
