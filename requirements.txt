@@ -1,4 +1,5 @@
 django
 requests
 gunicorn
+mysqlclient
 whitenoise
