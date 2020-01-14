@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'projects.wsgi.application'
 # noinspection PyInterpreter
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE':'django.db.backends.mysql',
+        'NAME': os.environ.get('MYSQL_DATABASE'),
+        'USER': os.environ.get('MYSQL_USER'), # ログインユーザー名
+        'PASSWORD':os.environ.get('MYSQL_PASSWORD'),
+        'HOST': os.environ.get('MYSQL_HOST'),
+        'PORT': '3306'
     }
 }
 # Password validation
