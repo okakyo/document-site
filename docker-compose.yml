@@ -11,13 +11,14 @@ services:
       MYSQL_HOST: ${MYSQL_HOST}
     volumes: 
       - ./api:/api
-
+    expose:
+      - 8000
     ports: 
       - 8000:8000
     image: "okakyo/django-api"
     depends_on: 
       - "db"
-    command: ["sh","-c","gunicorn  --bind 0.0.0.0:8000 projects.wsgi:application"]
+    command: ["sh","-c","python manage.py runserver"]
 
   db:
     image: mysql:5.7

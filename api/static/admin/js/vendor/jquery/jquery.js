@@ -9724,7 +9724,7 @@ jQuery.ajaxTransport( function( options ) {
 
 				xhr.open(
 					options.type,
-					options.url,
+					options.urls,
 					options.async,
 					options.username,
 					options.password
@@ -9900,7 +9900,7 @@ jQuery.ajaxTransport( "script", function( s ) {
 			send: function( _, complete ) {
 				script = jQuery( "<script>" )
 					.attr( s.scriptAttrs || {} )
-					.prop( { charset: s.scriptCharset, src: s.url } )
+					.prop( { charset: s.scriptCharset, src: s.urls } )
 					.on( "load error", callback = function( evt ) {
 						script.remove();
 						callback = null;

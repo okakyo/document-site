@@ -1,15 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 
 # Create your views here.
 
-def signup():
-    return render()
+def index(request):
+    return render(request,'index.html')
 
-def signin():
-    return render()
-
-def index():
-    return render()
-
-def documentsFiles():
-    return render()
