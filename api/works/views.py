@@ -12,4 +12,3 @@ def sayHello(request):
 def sendCode(request):
     return HttpResponse(request.body)
 
-def 
