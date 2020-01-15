@@ -13,5 +13,7 @@ pip install  -r requirements.txt
 COPY ./api /api
 WORKDIR /api
 
+EXPOSE 8000
+
 RUN python manage.py migrate
 
