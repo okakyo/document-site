@@ -8,9 +8,7 @@ ENV DEBUG 0
 COPY requirements.txt requirements.txt
 
 RUN  apk update &&\
-     apk add gcc mariadb-dev python3-dev build-base \
-     libffi-dev g++ libc-dev gfortran \
-     openblas-dev \ linux-headers &&\
+     apk add gcc mariadb-dev python3-dev build-base libffi-dev g++ libc-dev linux-headers &&\
      pip install  -r requirements.txt
 
 COPY ./api /api
