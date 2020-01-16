@@ -9,7 +9,7 @@ COPY requirements.txt requirements.txt
 
 RUN  apk add gcc mariadb-dev python3-dev build-base libffi-dev g++ libc-dev linux-headers &&\
 pip install  -r requirements.txt
-
+ENV isDevelop False
 COPY ./api /api
 WORKDIR /api
 

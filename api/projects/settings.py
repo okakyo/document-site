@@ -25,7 +25,7 @@ SECRET_KEY = 'h8u!vj2a6am48b)j*9u5aa#heb*w^$1j_tc-ul3w0)c7x75mz#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False #Trueから変更
+DEBUG = os.environ.get('isDevelop') #Trueから変更
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com',".ngrok.io"] #追加
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

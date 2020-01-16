@@ -9,6 +9,9 @@ services:
       MYSQL_USER: ${MYSQL_USERNAME}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_HOST: ${MYSQL_HOST}
+      YOUR_CHANNEL_ACCESS_TOKEN: ${YOUR_CHANNEL_ACCESS_TOKEN}
+      YOUR_CHANNEL_SECRET: ${YOUR_CHANNEL_SECRET}
+      isDevelop: "True"
     volumes: 
       - ./api:/api
     
