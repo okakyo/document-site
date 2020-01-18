@@ -1,4 +1,4 @@
-FROM python:3.8-alpine as build
+FROM python:3.8-alpine
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
