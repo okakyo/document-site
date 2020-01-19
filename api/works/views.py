@@ -10,8 +10,6 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 # Create your views here.
-
-
 token=os.environ['YOUR_CHANNEL_ACCESS_TOKEN']
 secret_key= os.environ['YOUR_CHANNEL_SECRET']
 
@@ -40,3 +38,8 @@ def callback(request):
 @handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
     lineBot.reply_message(event.reply_token,TextSendMessage(text=event.message.text))
+
+@handler.add()
+def lineThingsHandler(event):
+    pass 
+
