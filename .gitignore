@@ -4,3 +4,4 @@ node_modules/**/*
 docker/**/*
 .env
 db.sqlite3
+venv
